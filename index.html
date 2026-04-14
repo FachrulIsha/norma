@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Pilih Sikapmu · Stop Perundungan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-box">
+        <h1>🤝 Ayo Bersikap Baik <span>Kelas 5</span></h1>
+
+        <!-- Area Video Utama (Video 1) -->
+        <div class="layar-video">
+            <div class="bingkai-video">
+                <video id="videoUtama" class="video-asli" controls preload="metadata" controlsList="nodownload">
+                    <source src="video1.mp4" type="video/mp4">
+                    <source src="video1.webm" type="video/webm">
+                    <p style="color:white; padding:20px;">❌ Video tidak dapat dimuat. Pastikan file "video1.mp4" ada.
+                    </p>
+                </video>
+            </div>
+            <p class="info-video">🎥 Tonton video di atas, lalu pilih sikapmu di bawah ini!</p>
+        </div>
+
+        <!-- 3 Pilihan Sikap (langsung muncul) -->
+        <div id="areaPilihan" class="area-pilihan">
+            <div class="grid-pilihan">
+                <!-- Pilihan 1 -->
+                <div class="kartu-pilihan" data-skenario="1">
+                    <div class="nomor">①</div>
+                    <div class="judul">Membiarkan menangis dan terus mengejeknya</div>
+                    <div class="deskripsi">Klik untuk lihat konsekuensi</div>
+                </div>
+                <!-- Pilihan 2 -->
+                <div class="kartu-pilihan" data-skenario="2">
+                    <div class="nomor">②</div>
+                    <div class="judul">Menyadari Andi sedih tetapi tetap diam dan pergi</div>
+                    <div class="deskripsi">Klik untuk lihat konsekuensi</div>
+                </div>
+                <!-- Pilihan 3 -->
+                <div class="kartu-pilihan" data-skenario="3">
+                    <div class="nomor">③</div>
+                    <div class="judul">Bimo meminta maaf dan menyadari kata-katanya menyakiti</div>
+                    <div class="deskripsi">Klik untuk lihat konsekuensi</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Konten Skenario (termasuk video 2 untuk skenario 3) -->
+        <div id="kontenSkenario" class="kotak-skenario sembunyi"></div>
+
+        <!-- Tombol ulang (reset pilihan) -->
+        <div class="reset-area">
+            <button class="tombol-sekunder" id="tombolUlang">🔄 Sembunyikan Penjelasan</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
